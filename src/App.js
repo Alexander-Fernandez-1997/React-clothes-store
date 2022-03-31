@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Butter from "buttercms";
+import { Cartas } from "./components/Cartas";
 
 const butter = Butter(process.env.REACT_APP_BUTTER_ECOMMERCE);
 
@@ -8,41 +9,22 @@ export const App = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await butter.content.retrieve(["cookies"], {
+      const res = await butter.content.retrieve(["clothes"], {
         order: "name",
       });
       const { data } = await res.data;
-      const allProducts = data.cookies;
+      const allProducts = data.clothes;
       setProducts(allProducts);
     }
     fetchData();
   }, []);
 
   return (
-    <>
-      <h1>Cookie Jar</h1>
+    <div className="container">
+      <h1>Clothes Store</h1>
       <button className="snipcart-checkout"> View Cart </button>
 
-      {products.map((product) => (
-        <div>
-          <img src={product.image} alt={`${product.name}`} />
-          {product.name}
-          {product.price}
-          {product.description}
-
-          <button
-            className="snipcart-add-item"
-            data-item-id={product.id}
-            data-item-image={product.image}
-            data-item-name={product.name}
-            data-item-url="/"
-            data-item-description={product.description}
-            data-item-price={product.price}
-          >
-            Add to Cart
-          </button>
-        </div>
-      ))}
-    </>
+      <Cartas products={products} />
+    </div>
   );
 };
