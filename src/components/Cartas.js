@@ -3,19 +3,41 @@ import React from "react";
 export const Cartas = ({ products }) => {
   const handleModal = (e) => {
     e.preventDefault();
-    document.querySelectorAll("#exampleModal");
+    const father = e.target.offsetParent;
+    const modal = father.querySelector("#exampleModal");
+    // const body = document.querySelector(body);
+    // const myModal = new bootstrap.Modal(modal);
+    console.log(modal);
+    console.log(modal.classList);
+    console.log(modal.dataset);
+    // body.classList.add("modal-open");
+    modal.classList.add("show");
+    modal.style.display = "block";
+    modal.setAttribute("role", "dialog");
   };
+
+  const handleCloseModal = (e) => {
+    e.preventDefault();
+    const modal = e.target.offsetParent.offsetParent.offsetParent;
+    console.log(modal);
+    // const modal = father.querySelector("#exampleModal");
+    modal.classList.remove("show");
+    modal.style.display = "";
+    modal.setAttribute("role", "");
+  };
+
   return (
     <div className="row gap-5 m-4">
       {products.map((product) => (
         <div className="card rounded col-4 carta" key={product.id}>
           <div className="card-body p-3">
             <img
+              onClick={handleModal}
               src={product.image}
               alt={product.name}
               className="img-fluid d-block mx-auto mb-3"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              // data-bs-toggle="modal"
+              // data-bs-target="#exampleModal"
             ></img>
 
             <h5 className="text-center">
@@ -24,8 +46,8 @@ export const Cartas = ({ products }) => {
                 onClick={handleModal}
                 href="#"
                 className="text-dark "
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                // data-bs-toggle="modal"
+                // data-bs-target="#exampleModal"
               >
                 {product.name}
               </a>
@@ -58,7 +80,7 @@ export const Cartas = ({ products }) => {
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div className="modal-dialog modal-xl">
+              <div className="modal-dialog modal-xl ">
                 <div className="modal-content">
                   <section className="py-5">
                     <div className="container px-4 px-lg-5 my-5">
@@ -83,6 +105,7 @@ export const Cartas = ({ products }) => {
                           <p className="lead">{product.description}</p>
                           <div>
                             <button
+                              onClick={handleCloseModal}
                               className="snipcart-add-item btn btn-dark"
                               data-item-id={product.id}
                               data-item-image={product.image}
@@ -93,6 +116,12 @@ export const Cartas = ({ products }) => {
                               data-bs-dismiss="modal"
                             >
                               Add to Cart
+                            </button>
+                            <button
+                              className="ms-2 btn btn-dark"
+                              onClick={handleCloseModal}
+                            >
+                              X
                             </button>
                           </div>
                         </div>
