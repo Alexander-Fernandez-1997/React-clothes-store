@@ -11,7 +11,7 @@ export const Banner = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={banner1} className="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block banner">
+          <div className="carousel-caption d-none d-md-block banner">
             <h1>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               ipsa voluptates commodi!
@@ -20,7 +20,7 @@ export const Banner = () => {
         </div>
         <div className="carousel-item">
           <img src={banner2} className="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block banner">
+          <div className="carousel-caption d-none d-md-block banner">
             <h1>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               ipsa voluptates commodi

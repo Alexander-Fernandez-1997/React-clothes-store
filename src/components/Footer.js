@@ -4,44 +4,44 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 footer-item">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3 footer-item">
               <h4>Finance Business</h4>
               <p>
                 Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus
                 augue hasellus lacinia sapien vitae.
               </p>
-              <ul class="social-icons">
+              <ul className="social-icons">
                 <li>
                   <a
                     rel="nofollow"
                     href="https://fb.com/templatemo"
                     target="_blank"
                   >
-                    <i class="fa fa-facebook"></i>
+                    <i className="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i className="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-behance"></i>
+                    <i className="fa fa-behance"></i>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="col-md-3 footer-item">
+            <div className="col-md-3 footer-item">
               <h4>Useful Links</h4>
-              <ul class="menu-list">
+              <ul className="menu-list">
                 <li>
                   <a href="#">Vivamus ut tellus mi</a>
                 </li>
@@ -59,9 +59,9 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-md-3 footer-item">
+            <div className="col-md-3 footer-item">
               <h4>Additional Pages</h4>
-              <ul class="menu-list">
+              <ul className="menu-list">
                 <li>
                   <a href="#">About Us</a>
                 </li>
@@ -79,29 +79,29 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-md-3 footer-item last-item">
+            <div className="col-md-3 footer-item last-item">
               <h4>Contact Us</h4>
-              <div class="contact-form">
+              <div className="contact-form">
                 <form id="contact footer-contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12">
                       <fieldset>
                         <input
                           name="name"
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="name"
                           placeholder="Full Name"
                           required=""
                         />
                       </fieldset>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12">
                       <fieldset>
                         <input
                           name="email"
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           pattern="[^ @]*@[^ @]*"
                           placeholder="E-Mail Address"
@@ -109,24 +109,24 @@ export const Footer = () => {
                         />
                       </fieldset>
                     </div>
-                    <div class="col-lg-12">
+                    <div className="col-lg-12">
                       <fieldset>
                         <textarea
                           name="message"
                           rows="6"
-                          class="form-control"
+                          className="form-control"
                           id="message"
                           placeholder="Your Message"
                           required=""
                         ></textarea>
                       </fieldset>
                     </div>
-                    <div class="col-lg-12">
+                    <div className="col-lg-12">
                       <fieldset>
                         <button
                           type="submit"
                           id="form-submit"
-                          class="filled-button"
+                          className="filled-button"
                         >
                           Send Message
                         </button>
@@ -140,10 +140,10 @@ export const Footer = () => {
         </div>
       </footer>
 
-      <div class="sub-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
+      <div className="sub-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
               <p>Copyright &copy; 2022 Amazing Store Co., Ltd. </p>
             </div>
           </div>

@@ -1,6 +1,10 @@
 import React from "react";
 
 export const Cartas = ({ products }) => {
+  const handleModal = (e) => {
+    e.preventDefault();
+    document.querySelectorAll("#exampleModal");
+  };
   return (
     <div className="row gap-5 m-4">
       {products.map((product) => (
@@ -17,6 +21,7 @@ export const Cartas = ({ products }) => {
             <h5 className="text-center">
               {" "}
               <a
+                onClick={handleModal}
                 href="#"
                 className="text-dark "
                 data-bs-toggle="modal"
@@ -49,7 +54,7 @@ export const Cartas = ({ products }) => {
             <div
               className="modal fade"
               id="exampleModal"
-              tabindex="-1"
+              tabIndex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
