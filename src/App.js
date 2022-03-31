@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Butter from "buttercms";
 import { Cartas } from "./components/Cartas";
+import { Navbar } from "./components/Navbar";
+import { Banner } from "./components/Banner";
+import { Footer } from "./components/Footer";
 
 const butter = Butter(process.env.REACT_APP_BUTTER_ECOMMERCE);
 
@@ -20,11 +23,13 @@ export const App = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h1>Clothes Store</h1>
-      <button className="snipcart-checkout"> View Cart </button>
-
-      <Cartas products={products} />
-    </div>
+    <>
+      <Navbar />
+      <Banner />
+      <div className="container">
+        <Cartas products={products} />
+      </div>
+      <Footer />
+    </>
   );
 };
