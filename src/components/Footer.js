@@ -1,4 +1,5 @@
 import React from "react";
+import { FaInstagram, FaUserTie, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -15,26 +16,34 @@ export const Footer = () => {
               <ul className="social-icons">
                 <li>
                   <a
-                    rel="nofollow"
-                    href="https://fb.com/templatemo"
+                    href="https://www.instagram.com/alex.fernandez97/?hl=es"
                     target="_blank"
                   >
-                    <i className="fa fa-facebook"></i>
+                    <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>
+                  <a
+                    href="https://alexander-fernandez.netlify.app/"
+                    target="_blank"
+                  >
+                    <FaUserTie />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-linkedin"></i>
+                  <a
+                    href="https://www.linkedin.com/in/alexander-fern%C3%A1ndez-9455aa174/"
+                    target="_blank"
+                  >
+                    <FaLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-behance"></i>
+                  <a
+                    href="https://github.com/Alexander-Fernandez-1997"
+                    target="_blank"
+                  >
+                    <FaGithub />
                   </a>
                 </li>
               </ul>

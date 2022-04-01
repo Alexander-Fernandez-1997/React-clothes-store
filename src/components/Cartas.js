@@ -3,23 +3,27 @@ import React from "react";
 export const Cartas = ({ products }) => {
   const handleModal = (e) => {
     e.preventDefault();
-    const father = e.target.offsetParent;
+    const father = e.target.parentNode.parentNode;
+    console.log(e.target);
+    console.log(father);
     const modal = father.querySelector("#exampleModal");
     // const body = document.querySelector(body);
     // const myModal = new bootstrap.Modal(modal);
-    console.log(modal);
-    console.log(modal.classList);
-    console.log(modal.dataset);
+    // console.log(modal);
+    // console.log(modal.classList);
+    // console.log(modal.dataset);
     // body.classList.add("modal-open");
+
     modal.classList.add("show");
     modal.style.display = "block";
     modal.setAttribute("role", "dialog");
+    // e.target.offsetParent.classList.add("modal-open");
   };
 
   const handleCloseModal = (e) => {
     e.preventDefault();
     const modal = e.target.offsetParent.offsetParent.offsetParent;
-    console.log(modal);
+    // console.log(modal);
     // const modal = father.querySelector("#exampleModal");
     modal.classList.remove("show");
     modal.style.display = "";
@@ -29,7 +33,10 @@ export const Cartas = ({ products }) => {
   return (
     <div className="row gap-5 m-4">
       {products.map((product) => (
-        <div className=" col-4 carta" key={product.id}>
+        <div
+          className=" col-12 col-sm-12 col-md-5 col-lg-4 carta"
+          key={product.id}
+        >
           <div className="card-body cartachica pb-3">
             <img
               onClick={handleModal}
@@ -100,7 +107,7 @@ export const Cartas = ({ products }) => {
                             <span className="text-decoration-line-through">
                               {`$${product.price * 0.3 + product.price}`}
                             </span>
-                            <span>{`$${product.price}`}</span>
+                            <span className="ms-2">{`$${product.price}`}</span>
                           </div>
                           <p className="lead">{product.description}</p>
                           <div>
@@ -131,6 +138,7 @@ export const Cartas = ({ products }) => {
                 </div>
               </div>
             </div>
+            {/* hasta aca arriba es el modal */}
           </div>
         </div>
       ))}

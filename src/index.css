@@ -1,3 +1,7 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
 .precio {
   display: flex;
   justify-content: space-around;
@@ -5,7 +9,7 @@
   align-items: center;
 }
 .carta {
-  width: 30%;
+  /* width: 30%; */
   min-height: 40vh;
 }
 .cartachica {
@@ -21,7 +25,7 @@
 .banner {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
   color: white;
-  top: 10%;
+  top: 30%;
 }
 .banner h1 {
   width: 40%;
@@ -191,6 +195,9 @@ footer .contact-form button.filled-button:hover {
 .sub-footer a {
   color: #fff;
 }
+.row a {
+  text-decoration: none;
+}
 
 /* Boton de navbar */
 
@@ -241,4 +248,41 @@ footer .contact-form button.filled-button:hover {
 }
 .letrah1 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+.bannerblog {
+  background-image: url("https://images.pexels.com/photos/3768718/pexels-photo-3768718.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+.blog {
+  height: 80vh;
+}
+.blogtext {
+  height: content-size;
+}
+.blogimage {
+  height: 70%;
+
+  background-position: center;
+  background-size: cover;
+}
+.blogbutton {
+}
+.blog1 {
+  background-image: url("https://miro.medium.com/max/700/1*F5QTh7A3gmrHv9_wCc8vWw.jpeg");
+}
+.blog2 {
+  background-image: url("https://media.istockphoto.com/photos/this-one-match-perfect-with-me-picture-id1293366109?b=1&k=20&m=1293366109&s=170667a&w=0&h=2z_h2WlM3291IRKFXrdmtObnCt93rNNdNN6mqvnKD1I=");
+}
+
+@media (min-width: 992px) {
+  .carta {
+    width: 30%;
+  }
 }

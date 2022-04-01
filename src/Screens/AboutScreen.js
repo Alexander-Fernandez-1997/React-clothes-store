@@ -1,4 +1,5 @@
 import React from "react";
+import { FcShipped, FcOnlineSupport, FcLibrary } from "react-icons/fc";
 
 export const AboutScreen = () => {
   return (
@@ -14,7 +15,7 @@ export const AboutScreen = () => {
       <section className="ftco-section ftco-no-pb ftco-no-pt bg-dark text-light pt-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center about2">
+            <div className="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center about2 mb-5">
               <a
                 href="https://vimeo.com/45830194"
                 className="icon popup-vimeo d-flex justify-content-center align-items-center"
@@ -72,7 +73,7 @@ export const AboutScreen = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center about3">
+            <div className="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center about3 mb-5 mt-5">
               <a
                 href="https://vimeo.com/45830194"
                 className="icon popup-vimeo d-flex justify-content-center align-items-center"
@@ -94,7 +95,9 @@ export const AboutScreen = () => {
             <div className="col-lg-4 text-center d-flex align-self-stretch">
               <div className="media block-6 services p-4 py-md-5">
                 <div className="icon d-flex justify-content-center align-items-center mb-4">
-                  <span className="flaticon-bag"></span>
+                  <span>
+                    <FcShipped size="4rem" />
+                  </span>
                 </div>
                 <div className="media-body">
                   <h3 className="heading">Free Shipping</h3>
@@ -109,7 +112,9 @@ export const AboutScreen = () => {
             <div className="col-lg-4 text-center d-flex align-self-stretch">
               <div className="media block-6 services p-4 py-md-5">
                 <div className="icon d-flex justify-content-center align-items-center mb-4">
-                  <span className="flaticon-customer-service"></span>
+                  <span>
+                    <FcOnlineSupport size="4rem" />
+                  </span>
                 </div>
                 <div className="media-body">
                   <h3 className="heading">Support Customer</h3>
@@ -124,7 +129,9 @@ export const AboutScreen = () => {
             <div className="col-lg-4 text-center d-flex align-self-stretch">
               <div className="media block-6 services p-4 py-md-5">
                 <div className="icon d-flex justify-content-center align-items-center mb-4">
-                  <span className="flaticon-payment-security"></span>
+                  <span>
+                    <FcLibrary size="4rem" />
+                  </span>
                 </div>
                 <div className="media-body">
                   <h3 className="heading">Secure Payments</h3>
