@@ -93,12 +93,14 @@ export const Footer = () => {
               <h4>Contact Us</h4>
               <div className="contact-form">
                 <form
-                  data-netlify="true"
                   id="contact footer-contact"
-                  action=""
-                  method="post"
-                  name="amazing-store-contact"
+                  action="POST"
+                  method="POST"
+                  name="amazing-store"
+                  netlify
+                  netlify-honeypot="bot-field"
                 >
+                  <input type="hidden" name="form-name" value="amazing-store" />
                   <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
                       <fieldset>
