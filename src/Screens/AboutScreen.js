@@ -8,8 +8,7 @@ export const AboutScreen = () => {
       </div>
       {/* termina el banner */}
       <h1 className="pt-5 pb-3 ps-5 mb-0 text-light bg-dark letrah1 ">
-        Amazing Store story
-        <hr />
+        Amazing Store story <hr />
       </h1>
       {/* Story fachera */}
       <section className="ftco-section ftco-no-pb ftco-no-pt bg-dark text-light pt-5">
