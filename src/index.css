@@ -227,6 +227,8 @@ footer .contact-form button.filled-button:hover {
 
 .bannerabout {
   background-image: url("https://edicionessibila.com/wp-content/uploads/2021/09/GJF779-GJB988-GJC835_015.jpg");
+  background-size: cover;
+  background-position: top;
   height: 70vh;
   display: flex;
   align-content: center;
