@@ -29,8 +29,8 @@ export const Cartas = ({ products }) => {
   return (
     <div className="row gap-5 m-4">
       {products.map((product) => (
-        <div className="card rounded col-4 carta" key={product.id}>
-          <div className="card-body p-3">
+        <div className=" col-4 carta" key={product.id}>
+          <div className="card-body cartachica pb-3">
             <img
               onClick={handleModal}
               src={product.image}

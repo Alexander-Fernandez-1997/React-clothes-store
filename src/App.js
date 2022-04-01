@@ -23,6 +23,10 @@ export const App = () => {
   return (
     <>
       <Banner />
+      <h2 className="pt-5 pb-3 ps-5 mb-0">
+        Our products
+        <hr />
+      </h2>
       <div className="container">
         <Cartas products={products} />
       </div>

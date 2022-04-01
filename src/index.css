@@ -8,8 +8,15 @@
   width: 30%;
   min-height: 40vh;
 }
+.cartachica {
+  -webkit-box-shadow: 5px 6px 11px 0px rgba(0, 0, 0, 0.78);
+  box-shadow: 5px 6px 11px 0px rgba(0, 0, 0, 0.78);
+}
 .carta img {
   cursor: pointer;
+}
+.carta a {
+  text-decoration: none;
 }
 .banner {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
@@ -185,6 +192,8 @@ footer .contact-form button.filled-button:hover {
   color: #fff;
 }
 
+/* Boton de navbar */
+
 .cart-button {
   background-color: transparent;
   color: #fff;
@@ -205,4 +214,31 @@ footer .contact-form button.filled-button:hover {
 .cart-button:hover {
   background-color: #fff;
   color: #a4c639;
+}
+
+/* Desde aca voy a trabajar en el about */
+
+.bannerabout {
+  background-image: url("https://edicionessibila.com/wp-content/uploads/2021/09/GJF779-GJB988-GJC835_015.jpg");
+  height: 70vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+.about2 {
+  background-image: url("https://www.hogarmania.com/archivos/201911/moda-hombres-848x477x80xX.jpg");
+}
+.about3 {
+  background-image: url("https://www.vogueandwear.com/image0452/d9/d9cc859bb67838b7033f94f98557b02c.jpg");
+}
+.aboutstory {
+  background-color: #343434;
+}
+.corte {
+  height: 10vh;
+}
+.letrah1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 }
