@@ -263,21 +263,22 @@ footer .contact-form button.filled-button:hover {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 .blog {
-  height: 80vh;
+  height: 100vh;
 }
 .blogtext {
   height: content-size;
 }
 .blogimage {
   height: 60vh;
-
   background-position: center;
   background-size: cover;
 }
 .blogbutton {
+  height: 5vh;
 }
 .blog1 {
   background-image: url("https://miro.medium.com/max/700/1*F5QTh7A3gmrHv9_wCc8vWw.jpeg");
+  background-position: left !important;
 }
 .blog2 {
   background-image: url("https://media.istockphoto.com/photos/this-one-match-perfect-with-me-picture-id1293366109?b=1&k=20&m=1293366109&s=170667a&w=0&h=2z_h2WlM3291IRKFXrdmtObnCt93rNNdNN6mqvnKD1I=");
