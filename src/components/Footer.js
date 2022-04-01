@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaUserTie, FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -52,19 +53,19 @@ export const Footer = () => {
               <h4>Useful Links</h4>
               <ul className="menu-list">
                 <li>
-                  <a href="#">Vivamus ut tellus mi</a>
+                  <Link to="/blog">Vivamus ut tellus mi</Link>
                 </li>
                 <li>
-                  <a href="#">Nulla nec cursus elit</a>
+                  <Link to="/blog">Nulla nec cursus elit</Link>
                 </li>
                 <li>
-                  <a href="#">Vulputate sed nec</a>
+                  <Link to="/blog">Vulputate sed nec</Link>
                 </li>
                 <li>
-                  <a href="#">Cursus augue hasellus</a>
+                  <Link to="/blog">Cursus augue hasellus</Link>
                 </li>
                 <li>
-                  <a href="#">Lacinia ac sapien</a>
+                  <Link to="/blog">Lacinia ac sapien</Link>
                 </li>
               </ul>
             </div>
@@ -72,26 +73,32 @@ export const Footer = () => {
               <h4>Additional Pages</h4>
               <ul className="menu-list">
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="#">How We Work</a>
+                  <Link to="/about">How We Work</Link>
                 </li>
                 <li>
-                  <a href="#">Quick Support</a>
+                  <Link to="/about">Quick Support</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="/about">Contact Us</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <Link to="/about">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
             <div className="col-md-3 footer-item last-item">
               <h4>Contact Us</h4>
               <div className="contact-form">
-                <form id="contact footer-contact" action="" method="post">
+                <form
+                  data-netlify="true"
+                  id="contact footer-contact"
+                  action=""
+                  method="post"
+                  name="amazing-store-contact"
+                >
                   <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
                       <fieldset>
