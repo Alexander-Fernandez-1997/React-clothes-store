@@ -269,7 +269,7 @@ footer .contact-form button.filled-button:hover {
   height: content-size;
 }
 .blogimage {
-  height: 70%;
+  height: 60vh;
 
   background-position: center;
   background-size: cover;

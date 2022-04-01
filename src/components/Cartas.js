@@ -105,7 +105,10 @@ export const Cartas = ({ products }) => {
                           </h1>
                           <div className="fs-5 mb-5">
                             <span className="text-decoration-line-through">
-                              {`$${product.price * 0.3 + product.price}`}
+                              {`$${(
+                                product.price * 0.3 +
+                                product.price
+                              ).toFixed(2)}`}
                             </span>
                             <span className="ms-2">{`$${product.price}`}</span>
                           </div>
