@@ -160,8 +160,20 @@ export const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <p>Copyright &copy; 2022 Amazing Store Co., Ltd. </p>
+              {" "}
+              <p>
+                Copyright &copy; 2022 Amazing Store Co., Ltd.
+                <a href=" https://buttercms.com" target="_blank">
+                  <img
+                    style={{ width: "8rem" }}
+                    className="img-fluid"
+                    src="https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo"
+                    alt="buttercms-logo"
+                  />
+                </a>
+              </p>
             </div>
+            <div className="col-md-4"></div>
           </div>
         </div>
       </div>
