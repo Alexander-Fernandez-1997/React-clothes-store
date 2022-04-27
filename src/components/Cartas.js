@@ -7,24 +7,14 @@ export const Cartas = ({ products }) => {
     console.log(e.target);
     console.log(father);
     const modal = father.querySelector("#exampleModal");
-    // const body = document.querySelector(body);
-    // const myModal = new bootstrap.Modal(modal);
-    // console.log(modal);
-    // console.log(modal.classList);
-    // console.log(modal.dataset);
-    // body.classList.add("modal-open");
-
     modal.classList.add("show");
     modal.style.display = "block";
     modal.setAttribute("role", "dialog");
-    // e.target.offsetParent.classList.add("modal-open");
   };
 
   const handleCloseModal = (e) => {
     e.preventDefault();
     const modal = e.target.offsetParent.offsetParent.offsetParent;
-    // console.log(modal);
-    // const modal = father.querySelector("#exampleModal");
     modal.classList.remove("show");
     modal.style.display = "";
     modal.setAttribute("role", "");
@@ -40,40 +30,32 @@ export const Cartas = ({ products }) => {
           <div className="card-body cartachica pb-3">
             <img
               onClick={handleModal}
-              src={product.image}
-              alt={product.name}
+              src={product.data.photo}
+              alt={product.data.name}
               className="img-fluid d-block mx-auto mb-3"
-              // data-bs-toggle="modal"
-              // data-bs-target="#exampleModal"
             ></img>
 
             <h5 className="text-center">
               {" "}
-              <a
-                onClick={handleModal}
-                href="#"
-                className="text-dark "
-                // data-bs-toggle="modal"
-                // data-bs-target="#exampleModal"
-              >
-                {product.name}
+              <a onClick={handleModal} href="#" className="text-dark ">
+                {product.data.name}
               </a>
             </h5>
             <p className="small text-muted font-italic d-none">
-              {product.description}
+              {product.data.description}
             </p>
             <ul className="list-inline small">
               <li>
                 <div className="precio mt-3">
-                  <h4 className="text-dark">{`$${product.price}`}</h4>
+                  <h4 className="text-dark">{`$${product.data.price}`}</h4>
                   <button
                     className="snipcart-add-item btn btn-dark"
                     data-item-id={product.id}
-                    data-item-image={product.image}
-                    data-item-name={product.name}
+                    data-item-image={product.data.photo}
+                    data-item-name={product.data.name}
                     data-item-url="/"
-                    data-item-description={product.description}
-                    data-item-price={product.price}
+                    data-item-description={product.data.description}
+                    data-item-price={product.data.price}
                   >
                     Add to Cart
                   </button>
@@ -95,34 +77,36 @@ export const Cartas = ({ products }) => {
                         <div className="col-md-6">
                           <img
                             className="card-img-top mb-5 mb-md-0"
-                            src={product.image}
+                            src={product.data.photo}
                             alt="..."
                           />
                         </div>
                         <div className="col-md-6">
                           <h1 className="display-5 fw-bolder">
-                            {product.name}
+                            {product.data.name}
                           </h1>
                           <div className="fs-5 mb-5">
                             <span className="text-decoration-line-through">
-                              {`$${(
-                                product.price * 0.3 +
-                                product.price
-                              ).toFixed(2)}`}
+                              $
+                              {product.data.price !== undefined
+                                ? (product.data.price * 0.3 +
+                                    product.data.price) *
+                                  1
+                                : null}
                             </span>
-                            <span className="ms-2">{`$${product.price}`}</span>
+                            <span className="ms-2">{`$${product.data.price}`}</span>
                           </div>
-                          <p className="lead">{product.description}</p>
+                          <p className="lead">{product.data.description}</p>
                           <div>
                             <button
                               onClick={handleCloseModal}
                               className="snipcart-add-item btn btn-dark"
                               data-item-id={product.id}
-                              data-item-image={product.image}
-                              data-item-name={product.name}
+                              data-item-image={product.data.photo}
+                              data-item-name={product.data.name}
                               data-item-url="/"
-                              data-item-description={product.description}
-                              data-item-price={product.price}
+                              data-item-description={product.data.description}
+                              data-item-price={product.data.price}
                               data-bs-dismiss="modal"
                             >
                               Add to Cart
